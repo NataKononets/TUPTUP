@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TupTup | Product</title>
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="product-page">
+
+    
+<!-- HEADER -->
+<header class="main-header">
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/Logo.png" width="36" alt="TupTup">
+      <strong>TupTup</strong>
+    </a>
+
+    <!-- BURGER -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- DESKTOP MENU -->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search">
+        </div>
+        <a href="cart.html" class="cart-link">
+          <i class="bi bi-cart3"></i> Cart (0)
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5>TupTup</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <a class="nav-link mb-3" href="index.html">Home</a>
+    <a class="nav-link mb-3" href="shop.html">Shop</a>
+    <a class="nav-link mb-3" href="categories.html">Categories</a>
+    <a class="nav-link mb-3" href="contact.html">Contact</a>
+    <hr>
+    <a class="nav-link" href="cart.html"><i class="bi bi-cart3"></i> Cart (0)</a>
+  </div>
+</div>
+
+
+   <!-- PRODUCT -->
+<section class="container py-5 product-page">
+  <div class="row g-5 align-items-start">
+
+    <div class="col-md-6 text-center">
+      <img src="img/14.jpg" alt="Soft Plush Bunny" class="product-main-img mb-3">
+
+      <div class="d-flex justify-content-center gap-3">
+        <img src="img/14.jpg" class="thumb-img">
+        <img src="img/12.jpg" class="thumb-img">
+        <img src="img/13.jpg" class="thumb-img">
+      </div>
+    </div>
+
+    <div class="col-md-6 product-info">
+      <h2>Soft Plush Bunny</h2>
+      <p class="product-price-big">$29.99</p>
+
+      <p class="text-muted">
+        Soft and safe plush bunny for kids. Perfect for playtime and cuddles.
+      </p>
+
+      <div class="d-flex align-items-center gap-3 my-4">
+        <button class="qty-btn">−</button>
+        <span>1</span>
+        <button class="qty-btn">+</button>
+      </div>
+
+      <button class="btn hero-btn">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="container py-5">
+  <h3 class="mb-4">Related products</h3>
+
+  <div class="row g-4">
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="img/12.jpg">
+        <h5>Kids’ Book</h5>
+        <p>$8.00</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="img/13.jpg">
+        <h5>Winter Boots</h5>
+        <p>$39.99</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+ <footer class="footer mt-5">
+ <div class="container py-5">
+    <div class="row gy-4">
+
+      <div class="col-md-3">
+        <h5>TupTup</h5>
+        <p>The best store for toys,<br>clothes and essentials<br>for little explorers</p>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Navigation</h6>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Help</h6>
+        <ul class="footer-list">
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Return & Refund</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Social</h6>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-telegram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
