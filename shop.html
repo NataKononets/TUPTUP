@@ -12,57 +12,55 @@
 
 <!-- HEADER -->
 <header class="main-header">
-  <nav class="navbar navbar-expand-lg container">
-
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img src="img/Logo.png" width="36" alt="TupTup">
-      <strong>TupTup</strong>
+  <nav class="navbar navbar-expand-md container">
+   <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/Logo.png" width="40" height="40" alt="TupTup">
+      <span class="logo-text">TupTup</span>
     </a>
 
-    <!-- BURGER -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#mobileMenu">
+    <!-- Burger -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Desktop menu -->
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mx-auto gap-4">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
         <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
 
-      <div class="d-none d-lg-flex align-items-center gap-3">
-        <div class="search-box">
+      <div class="d-flex align-items-center gap-3">
+        <div class="search-box d-none d-md-flex">
           <i class="bi bi-search"></i>
-          <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search..." />
         </div>
-        <a href="cart.html" class="cart-link">
-          <i class="bi bi-cart3"></i> Cart (0)
+
+        <a href="#" class="cart-link d-none d-md-flex">
+          <i class="bi bi-cart3"></i>
+          <span>Cart (0)</span>
         </a>
       </div>
     </div>
+
   </nav>
 </header>
 
 <!-- MOBILE MENU -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+<div class="offcanvas offcanvas-end" id="mobileMenu">
   <div class="offcanvas-header">
-    <h5>TupTup</h5>
+    <h5 class="offcanvas-title">Menu</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
-
-  <div class="offcanvas-body">
-    <a class="nav-link mb-3" href="index.html">Home</a>
-    <a class="nav-link mb-3" href="shop.html">Shop</a>
-    <a class="nav-link mb-3" href="categories.html">Categories</a>
-    <a class="nav-link mb-3" href="contact.html">Contact</a>
-    <hr>
-    <a class="nav-link" href="cart.html"><i class="bi bi-cart3"></i> Cart (0)</a>
+  <div class="offcanvas-body d-flex flex-column gap-3">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="categories.html">Categories</a>
+    <a href="contact.html">Contact</a>
+    <a href="#"><i class="bi bi-cart3"></i> Cart (0)</a>
   </div>
 </div>
 
